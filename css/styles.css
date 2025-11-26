@@ -11,6 +11,9 @@ header
     align-items: center;
     margin-inline: 5%;
 }
+header :hover{
+     animation: animeoi 2s linear infinite;
+}
 .logo h1
 {
     font-size: 50px;
@@ -41,7 +44,17 @@ header
     text-decoration: none;
     color: black;
     font-weight: bold;
+    background-color: rgb(226, 223, 223);
+    border-radius: 15%;
+    
+    
 }
+
+/* .logo a :hover {
+     background-color: rgb(141, 160, 160);
+    color:rgb(241, 22, 22) ;
+    transition-duration: 0.6s;
+} */
 #section1
 {
     height: 80vh;
@@ -52,9 +65,24 @@ header
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: animemoi 5s linear infinite;
     
 
 }
+
+@keyframes animeloi{
+    0%{transform: translatey(0deg);}
+    50%{transform: translatey(50deg);}
+    100%{transform: translatey(20deg);}
+}
+
+
+
+@keyframes animemoi{
+    0%{background: url(../image/article-image-1\(1\).jpg); background-repeat: no-repeat; background-size: cover;}
+    50%{background: url(../image/article-image-2\(1\).jpg); background-repeat: no-repeat; background-size: cover;}
+    100%{background: url(../image/main\(1\).jpg); background-repeat: no-repeat; background-size: cover;}
+}   
 #section1 h1
 {
     text-transform: uppercase;
@@ -78,13 +106,46 @@ header
     text-decoration: none;
     border-radius: 5px;
     transition-duration: 3s;   /*pour une transistion dun element du site  */
+    
 }
-#section1 a:hover
+/* #section1 a:hover
 {
     background-color: aqua;
     color:black ;
     transition-duration: 0.6s;
-}
+} */
+
+/* #section1 a:hover
+{
+    background-color: aqua;
+    color:black ;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+} */
+
+/* #section1 a:hover
+{
+    background-color: aqua;
+    color:black ;
+    transform: rotate(360deg);
+    transition-duration: 0.2s;
+} */
+
+#section1 a:hover
+{
+    background-color: aqua;
+    color:black ;
+    transform: translate(10px,20px);
+    transition-duration: 0.2s;
+} 
+
+/* #section1 a:hover
+{
+    background-color: aqua;
+    color:black ;
+    transform: skew(45deg)
+    transition-duration: 0.2s;
+} */
 
 
 /* main{
@@ -104,6 +165,8 @@ header
     align-items: center;
     margin: 0%;
     margin-top: 1%;
+    
+    
 }
 
 #section2 div{
@@ -124,6 +187,13 @@ align-items: center;
  padding: 5%;  
 }
 
+#section3a:hover{
+    background-color: aqua;
+    color:black ;
+    transform: rotate(360deg);
+    transition-duration: 0.2s;
+}
+
 #section3{
     background-color: rgb(255, 255, 255);
     height: 80vh;
@@ -133,6 +203,7 @@ align-items: center;
     align-items: center;
     margin-bottom: 5%;
     padding: 2%;
+    animation: animemoi 22s linear infinite ;
 }
 
 .grand-gauche{
@@ -194,7 +265,10 @@ align-items: center;
     }
 
     a:hover{
-                color: black;
+            background-color: aqua;
+            color:black ;
+            transform: translate(10px,20px);
+            transition-duration: 0.2s;
            }
 }
 
@@ -263,9 +337,22 @@ align-items: center;
        transition-duration: 0.5s;
     }
 
+    @keyframes animemoi {
+        form{transform: rotate(0deg); }
+        to{transform: rotate(360deg); }
+    }
     a:hover{
-                color: black;
-           }
+        /* color: black;
+         background-color: rgb(202, 255, 10);
+         color:rgb(212, 17, 17) ; */
+         /* transform: rotate(8deg); */
+         /* transform: scale(1.1);  */
+         /* transform: translate(7px,15px); */
+         /* transform: skew(34deg);
+         transition-duration: 0.8s;
+            */
+            animation: animemoi 2s linear infinite;
+            }
 }
 
 
@@ -324,4 +411,21 @@ footer{
     font-size: 400%;
     margin-top: 5%;
 
+}
+
+.aaaa{
+    background-color: blueviolet;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animeloi 2s ease-in-out infinite;
+    
+
+}
+
+@keyframes animeloi{
+    0%{transform: translatey(20px);}
+    50%{transform: translatey(0px);}
+    100%{transform: translatey(20px);}
 }
